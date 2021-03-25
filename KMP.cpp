@@ -1,6 +1,4 @@
-/*
- * Created by Dipta Das on 09-11-18
-*/
+
 
 #include <bits/stdc++.h>
 #include <stdio.h>
@@ -36,7 +34,8 @@ void KMPMultipleTimes (string text, string pattern) {
 
         if (j == (int) pattern.length()) {
             //cout << "found match at : " << (i - pattern.length()) << endl;
-            k++;
+            k++;//how many times found
+            
             j = lps[j-1];
             found = true;
         }
